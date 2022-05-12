@@ -17,12 +17,12 @@ class PersonTest {
     }
 
     @Test
-    void getName() {
-        assertEquals("PEPE", p.getName());
+    void getdni() {
+        assertEquals("PEPE", p.getdni());
     }
 
     @Test
-    void setName() {
+    void setdni() {
     }
 
     @Test
@@ -34,11 +34,11 @@ class PersonTest {
     }
 
     @org.junit.jupiter.api.Test
-    void testGetName() {
+    void testGetdni() {
     }
 
     @org.junit.jupiter.api.Test
-    void testSetName() {
+    void testSetdni() {
     }
 
     @org.junit.jupiter.api.Test

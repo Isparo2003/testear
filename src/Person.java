@@ -34,12 +34,14 @@ public class Person {
     }
 
     public void setCorreo(String correo) {
-        Pattern pattern = Pattern.compile("^[_A-Za-z0-9-\\+]+(\\.[_A-Za-z0-9-]+)*@"+ "[A-Za-z0-9-]+(\\.[A-Za-z0-9]+)*(\\.[A-Za-z]{2,})$");
-        Matcher mather = pattern.matcher(correo);
-        if (mather.find() == true) {
-            this.correo = correo;
-        } else {
-            this.correo = "";
-        }
+        if ( correo != null ) {
+            Pattern pattern = Pattern.compile("^[_A-Za-z0-9-\\+]+(\\.[_A-Za-z0-9-]+)*@"+ "[A-Za-z0-9-]+(\\.[A-Za-z0-9]+)*(\\.[A-Za-z]{2,})$");
+            Matcher mather = pattern.matcher(correo);
+            if (mather.find() == true) {
+                this.correo = correo;
+            } else {
+                this.correo = "";
+            }
+        }else this.correo = "";
     }
 }

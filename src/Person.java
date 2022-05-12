@@ -23,6 +23,8 @@ public class Person {
     }
 
     public void setdni(String dni) {
+        Pattern pat = Pattern.compile("[0-9]{7,8}[A-Za-z]");
+        Matcher mat = pat.matcher("4258965P");
         this.dni = dni;
 
     }
